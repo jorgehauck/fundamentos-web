@@ -14,6 +14,15 @@
     text-align: justify;
 }
 
+body {
+    background-image: url("../img/background.jpg");
+    opacity: 1.65;
+}
+
+.font{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+}
 #menu li {
     display: inline;
     padding: 15px;
@@ -27,6 +36,7 @@
 
 #menu li a:hover {
     color: grey;
+    
 }
 
 .p-30 {
