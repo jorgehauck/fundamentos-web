@@ -11,6 +11,7 @@ let nome = window.document.getElementById('nome')
 let email = document.querySelector('#email')
 let assunto = document.querySelector('#assunto')
 let mapa = document.querySelector('#mapa')
+
 let nomeOk = false
 let emailOk = false
 let assuntoOk = false 
@@ -24,6 +25,7 @@ function validaNome(){
         txtNome.innerHTML = 'Nome inválido'
         txtNome.style.color = 'red'
         nomeOk = true
+
     } else {
         txtNome.innerHTML = "Nome válido"
         txtNome.style.color = 'green'
@@ -35,10 +37,11 @@ function validaEmail(){
     if(email.value.indexOf('@') == -1 || email.value.indexOf('.') == -1) {
         txtEmail.innerHTML = 'E-mail inválido'
         txtEmail.style.color = 'red'
-        emailOk = true
+       
     } else {
         txtEmail.innerHTML = "Email válido"
         txtEmail.style.color = "green"
+        emailOk = true
     }
 }
 
@@ -73,3 +76,4 @@ function mapaNormal() {
     mapa.style.height = "250px"
 
 }
+
